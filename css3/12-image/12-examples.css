@@ -1,0 +1,55 @@
+.image1{
+    background-color: greenyellow;
+    border-radius: 8px;  /*próximo de 0 fica quadradro*/
+}
+
+.image2{
+    background-color: greenyellow;
+    border-radius: 50%;
+}
+
+.image3{
+    border: 1px solid #ddd; /*borda levemente sombreada*/
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.link{
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.link:hover{
+    box-shadow: 0 0 2px 1px rgba(206,228,18,0.72); /*sombra*/
+}
+
+/*a imagem se adequa em tamanho de acordo com o tamanho da tela*/
+.img-responsive{
+    max-width: 100%;
+    height: auto;
+}
+
+/*criar corpo do cartão*/
+.card{
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /*sombra do cartão*/
+}
+
+.card img{
+    width: 100%;
+}
+
+.card .container{
+    text-align: center;
+    padding: 10px 20px;
+}
+
+/*filtro preto e branco para a imagem*/
+.filter{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}

@@ -1,0 +1,45 @@
+/*dividir em X colunas - utilizado em revistas online*/
+.column1{
+    -webkit-column-count: 4; /*Chrome, Safari, Opera*/
+    -moz-column-count: 4; /*Firefox*/
+    column-count: 4;
+    padding: 20px;
+}
+
+.column2{
+    -webkit-column-count: 4; /*Chrome, Safari, Opera*/
+    -moz-column-count: 4; /*Firefox*/
+    column-count: 4;
+    padding: 20px;
+    -webkit-column-gap: 50px; /*distância entre colunas*/
+    -moz-column-gap: 50px;
+    column-gap: 50px;
+}
+
+.column3{
+    -webkit-column-count: 4; /*Chrome, Safari, Opera*/
+    -moz-column-count: 4; /*Firefox*/
+    column-count: 4;
+    padding: 20px;
+    -webkit-column-gap: 20px; /*distância entre colunas*/
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    -webkit-column-rule-style: solid; 
+    -moz-column-rule-style: solid;
+    column-rule-style: solid; /*linhas que dividem as colunas*/
+
+    -webkit-column-rule-width: 1px;  /*espessura da linha que divide as colunas*/
+    -moz-column-rule-width: 1px;
+    column-rule-width: 1px; 
+
+    -webkit-column-rule-color: red;  /*cor da linha que divide as colunas*/
+    -moz-column-rule-color: red;
+    column-rule-color: red; 
+}
+
+/*editar o título*/
+.column-title{
+    -webkit-column-span: all; /*título em cima de todas as colunas*/
+    -moz-column-span: all; /*compatibilidade*/
+    column-span: all;
+}

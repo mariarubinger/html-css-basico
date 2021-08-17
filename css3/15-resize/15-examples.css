@@ -1,0 +1,26 @@
+/*o usuário pode redimensionar a largura do texto*/
+
+.resize1{
+    border: 2px solid;
+    padding: 20px;
+    width: 300px;
+    resize: horizontal;
+    overflow: auto;
+}
+
+.resize2{
+    border: 2px solid;
+    padding: 20px;
+    width: 300px;
+    resize: vertical;
+    overflow: auto;
+}
+
+/*pode alterar na horizontal e na vertical ao mesmo tempo*/
+.resize3{
+    border: 2px solid;
+    padding: 20px;
+    width: 300px;
+    resize: both;
+    overflow: auto;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <div id='resposta'></div>
+    
+<script>
+
+function fibonacci(){
+    var penultimo=0, ultimo=1;
+    var numero;
+  
+    for (let index = 1; index < 100; index++) {
+        if (index <= 2){
+            numero = index - 1;
+            document.getElementById("resposta").innerHTML = document.getElementById("resposta").innerHTML + numero+ '<br>'
+            
+        } else{
+            numero = ultimo + penultimo;
+            penultimo = ultimo;
+            ultimo = numero;        
+            document.getElementById("resposta").innerHTML = document.getElementById("resposta").innerHTML + numero+ '<br>'
+        } 
+    }
+}
+
+0
+0 + 1 = 1
+1
+
+fibonacci();
+
+</script>  
+
+</body>
+</html>

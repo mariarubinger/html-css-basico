@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operações</title>
+</head>
+<body>
+    <header>
+        <h1>Operações da Maria</h1>
+    </header>
+
+    <script>
+        function somarValores() {
+            var var1 = document.getElementById("var1").value;
+            var var2 = document.getElementById("var2").value;
+            var resultadoSoma = parseInt(var1) + parseInt(var2);
+            document.getElementById("resultadoSoma").innerHTML = resultadoSoma;
+        }
+
+        function subtrairValores() {
+            var var1 = document.getElementById("var1").value;
+            var var2 = document.getElementById("var2").value;
+            var resultadoSubtracao = parseInt(var1) - parseInt(var2);
+            document.getElementById("resultadoSubtracao").innerHTML = resultadoSubtracao;
+        }
+
+        function multiplicarValores() {
+            var var1 = document.getElementById("var1").value;
+            var var2 = document.getElementById("var2").value;
+            var resultadoMultiplicacao = parseInt(var1) * parseInt(var2);
+            document.getElementById("resultadoMultiplicacao").innerHTML = resultadoMultiplicacao;
+        }
+    
+        function dividirValores() {
+            var var1 = document.getElementById("var1").value;
+            var var2 = document.getElementById("var2").value;
+            var resultadoDivisao = parseInt(var1) / parseInt(var2);
+            document.getElementById("resultadoDivisao").innerHTML = resultadoDivisao;
+        }
+        
+    </script>   
+
+    Insira a Primeira variável: <input id="var1" value=" "><br><br>
+
+    Insira a Segunda variável: <input id="var2" value=" "><br><br>
+
+    <button id="somar" onclick="somarValores()">SOMAR</button><br><br>
+    Resultado da Soma: <p id="resultadoSoma"></p>
+
+    <br>
+    <button id="subtrair" onclick="subtrairValores()">SUBTRAIR</button><br><br>
+    Resultado da Subtração: <p id="resultadoSubtracao"></p>
+
+    <br>
+    <button id="multiplicar" onclick="multiplicarValores()">MULTIPLICAR</button><br><br>
+    Resultado da Multiplicação: <p id="resultadoMultiplicacao"></p>
+
+    <br>
+    <button id="dividir" onclick="dividirValores()">DIVIDIR</button><br><br>
+    Resultado da Divisão: <p id="resultadoDivisao"></p>
+
+   
+</body>
+</html>

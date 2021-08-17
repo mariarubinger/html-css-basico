@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous">
+    </script>
+  <script src="mask.js"></script>
+
+  <script>
+      $(document).ready(function(){
+         $('.cpf').mask('000.000.000-00');         
+         $('.dinheiro').mask("#.##0,00", {reverse: true});
+         $('.cpf').click(function(){
+            $('body').attr('style','background-color: #F00');
+            $('.quadrado').fadeIn()            
+         })
+         $('.dinheiro').click(function(){
+            $('body').attr('style','background-color: #0F0');
+            $('.quadrado').fadeOut()
+         })
+      })
+
+    
+
+</script>
+
+<style>
+.quadrado{
+    height: 150px;
+    width: 150px;
+    background-color: #cccccc;
+}
+
+</style>
+  
+</head>
+<body>
+    <input type="text" class="cpf">
+
+    <input type="text" class="dinheiro">
+    <input type="text" class="dinheiro">
+
+    <div class="quadrado">
+        oi
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurando Booststrap</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/open-iconic.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg nav-light bg-light">
+            <a href="" class="navbar-brand">SON</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Link 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Link 4</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Link Dropdown</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Action 1</a>
+                            <a href="#" class="dropdown-item">Action 2</a>
+                            <a href="#" class="dropdown-item">Action 3</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="mt-4 mb-4">
+                        Welcome to Land page School of Net 
+                    </h1>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid" src="https://mockuphone.com/static/images/devices/apple-iphone8-silver-portrait.png" alt="">
+                </div>
+            </div>
+        </div>
+    
+    <!-- CARDS E ÍCONES (useiconic.com) -->
+
+        <div class="container">
+            <div class="row">
+        <!--    <div class="col-xs-12 col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            Title header 
+                        </div>
+                        <div class="card-body">
+                            Card body
+                        </div>
+                        <div class="card-footer">
+                            Card footer 
+                        </div>
+                    </div>
+                </div>    --> 
+                <div class="col-xs-12 col-sm-12 col-md-4">
+                    <div class="card text-center" style="border: none">
+                        <div class="card-body">
+                            <span class="oi" data-glyph="info" style="border-radius: 50%; padding: 0.5em; color: white; background:slategrey; font-size: 1em;"></span>
+                            <p class="text-center" style="margin-top: 1.2em">Text test</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4">
+                    <div class="card text-center" style="border: none">
+                        <div class="card-body">
+                            <span class="oi" data-glyph="infinity" style="border-radius: 50%; padding: 0.5em; color: white; background:slategrey; font-size: 1em;"></span>
+                            <p class="text-center" style="margin-top: 1.2em">Text test</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4">
+                    <div class="card text-center" style="border: none">
+                        <div class="card-body">
+                            <span class="oi" data-glyph="layers" style="border-radius: 50%; padding: 0.5em; color: white; background:slategrey; font-size: 1em;"></span>
+                            <p class="text-center" style="margin-top: 1.2em">Text test</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="form-group">
+                                    <label for="name">Name:</label>
+                                    <input type="text" class="form-control" name="name" placeholder="Enter your name:">
+                                    <small class="form-text text-muted">Put your full name</small>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" class="form-control" placeholder="Enter email:">
+                                    <small class="form-text text-muted">Put your best email here</small>
+                                </div>
+                            </div>
+                            
+                            <div class="col-xs-12 col-sm-12">    
+                                <div class="form-group">
+                                    <label for="subject">Subject:</label>
+                                    <select name="subject" class="form-control">
+                                        <option value="" selected></option>
+                                        <option value="">Option 1</option>
+                                        <option value="">Option 2</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message:</label>
+                                    <textarea class="form-control" name="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                                </div>
+
+
+                    <!-- CHECKBOX -->
+
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input">
+                                    <label for="" class="form-check-label">Send reply to email?</label>
+                                </div>
+
+                    <!-- TIPOS DE BOTÕES SÓLIDOS -->
+
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary">Send</button>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-secondary">Send</button>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-danger">Send</button>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-warning">Send</button>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-success">Send</button>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-info">Send</button>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-light">Send</button>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-dark">Send</button>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-link">Send</button>
+                                </div>
+
+                        <!-- TIPOS DE BOTÕES COM BORDA E BACKGROUD BRANCO - FICA COLORIDO QUANDO APERTA -->
+                                
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-outline-primary">Send</button>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-outline-success">Send</button>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-outline-dark">Send</button>
+                                </div>
+
+                        <!-- TAMANHO DOS BOTÕES -->    
+                        
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-outline-dark">Send</button>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-sm btn-outline-dark">Send</button>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-lg btn-outline-dark">Send</button>
+                                </div>
+
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-block btn-sm btn-outline-dark">Send</button>
+                                </div>
+
+                            </div>
+                        </div>    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../bootstrap/js/jquery-3.5.1.min.js"></script>
+    <script src="../bootstrap/js/popper.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

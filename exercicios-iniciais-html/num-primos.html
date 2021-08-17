@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números Primos</title>
+
+</head>
+<body>
+    <div id="resultado"></div>
+
+</body>
+
+    <script>
+        function exibirAlerta() {
+            alert('sou linda')
+            
+        }
+
+        function exibirMensagem() {
+            console.log('sua gostosa')   
+                  
+        }
+
+        function exibirAlertaPersonalizado(msg) {
+            console.log('minha mensagem é:' + msg)
+            
+        }
+
+        function somar(num1, num2) {
+            result = parseFloat(num1) + parseFloat(num2)             
+            return result
+        }
+
+        function exibirSoma(primeira, segunda) {
+            numero_somado = somar(primeira, segunda)
+            document.getElementById("resultado").innerHTML = numero_somado
+            
+        }
+
+        function somaNumeroComNumerosAnterioresInteiros(numero) {
+            for (let index = 0; index <= numero; index++) {       
+                if(document.getElementById("resultado").innerHTML != ""){
+                    document.getElementById("resultado").innerHTML = parseInt(document.getElementById("resultado").innerHTML) + parseInt(index)
+                }else{
+                    document.getElementById("resultado").innerHTML = 0;
+                }
+            }
+        }
+
+        //exibirSoma(4.878,6.356)
+
+       //exibirAlertaPersonalizado('BOM DIA');
+        // exibirAlertaPersonalizado('ok');
+        // exibirAlertaPersonalizado("9");
+
+        //somar(1,3);
+        //somaNumeroComNumerosAnterioresInteiros(3);
+
+
+        function checarNumeroPrimo(numero){
+            for (let index = 2; index < numero; index++) {
+                if (numero % index == 0) {
+                    return false
+                }
+            }
+            return true
+        }
+        
+
+        function exibirSeNumeroEPrimo(numero){
+            if (checarNumeroPrimo(numero)) {
+                document.getElementById("resultado").innerHTML = numero+  ' é primo'
+            } else{
+                document.getElementById("resultado").innerHTML = numero+  ' não é primo'
+            }
+        }
+
+        //exibirSeNumeroEPrimo(11)
+
+        function listarNumerosPrimos(){
+            for (let index = 2; index < 100; index++) {
+               if (checarNumeroPrimo(index)) {
+
+                   //console.log(index);
+               document.getElementById("resultado").innerHTML = document.getElementById("resultado").innerHTML + index + '<br>'
+               }
+            }
+        }
+
+        listarNumerosPrimos();
+
+
+
+        
+    </script>
+
+</html>

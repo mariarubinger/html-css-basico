@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocar palavra no texto</title>
+</head>
+<body>
+
+<p id="text">
+Belo Horizonte registrou quase mil novos casos de Covid-19, nesta segunda-feira (7) desde a última atualização do Boletim Epidemiológico, divulgada na sexta-feira (4). De acordo com a prefeitura, 56.106 pessoas foram infectadas pelo novo coronavírus na capital.
+Todos os índices monitorados pela PBH tiveram aumento desde a sexta-feira, exceto a taxa de ocupação de leitos de enfermaria, que se manteve em 47,9%.
+O número médio de transmissão, tecnicamente conhecido como RT, subiu de 1,06 na sexta, para 1,09 nesta segunda-feira. Isso significa que, cada 100 pessoas com a doença, pode contaminar outras 109.
+O índice de ocupação de leitos de UTI dos casos de Covid-19 também aumentou de 50,6% para 54,5% das vagas.
+</p>
+<br>
+
+Clique para trocar Belo Horizonte por BH
+<button onclick="trocarPalavra()">TROCAR</button><br><br>
+
+<script>
+    function trocarPalavra() {
+        var text1 = document.getElementById("text").innerHTML;
+        console.log(text1);
+        document.getElementById("text").innerHTML = text1.replace(/belo horizonte/gi, "BH");
+    }
+
+</script>
+
+</body>
+</html>

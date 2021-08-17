@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+
+    <div id="resultado"></div>
+
+</body>
+<script>
+    var amor = ['Marcus', '02347398199', 'Porto', 'Masculino'];
+  var dadosDoServidor = [
+                    amor,
+                    ['Maria', '12345678911', 'Porto', 'Feminino'],
+                    ['Angela', '33333333333', 'porto', 'feminino'],
+                    ['Camila', '11111111111', 'Porto', 'Feminino']
+                ]
+
+    dadosDoServidor.sort()
+  console.log(dadosDoServidor.length)  
+  var nomeDevariavelQualquer = '<h1>Lista de pessoas especiais</h1>';  
+  for (let index = 0; index < dadosDoServidor.length; index++) {
+    
+    if(dadosDoServidor[index][2] == 'porto'){
+        dadosDoServidor[index][2] = 'Porto'
+    }
+    nomeDevariavelQualquer += '<b>Nome:</b> ' + dadosDoServidor[index][0] + ' de ' + dadosDoServidor[index][2]+'<br>';
+    
+      
+  }
+  
+  document.getElementById('resultado').innerHTML = nomeDevariavelQualquer;
+ 
+</script>
+
+</html>

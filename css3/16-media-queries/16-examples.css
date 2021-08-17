@@ -1,0 +1,24 @@
+/*personaliza a página de impressão PRINT*/
+.print{
+    display: none; /*fica invisível na tela*/
+}
+
+/*media querie é um novo recurso do CSS3
+tabletes, computadores, celulares*/
+.screen{
+    display: none;
+}
+
+/*se a tela tiver menor ou até 900px vai aparecer vermelho*/
+@media screen and (max-width: 900px){
+    body{
+        background-color: red;
+    }
+    .screen{
+        display: block;
+    }
+
+}
+
+/*você consegue fazer sites responsivos 
+ou seja, sites que sejam bem renderizadas em uma variedade de dispositivos e tamanhos de janelas ou telas.*/

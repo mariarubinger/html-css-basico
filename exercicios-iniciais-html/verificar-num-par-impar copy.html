@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar se um número é par ou ímpar</title>
+
+</head>
+<body>
+
+</body>
+    <script>
+
+        function checarNumero(){
+            var var1 = document.getElementById("var1").value;
+            
+            if (typeof var1 == 'string' && var1.match(/(\d+[,.]\d+)/)) {
+                document.getElementById("resultado").innerHTML = var1+  ' não é um número inteiro.'
+                alert('Digite um número inteiro para verificar se é par ou impar!')
+
+                }else if (parseInt(var1) % 2 == 0){
+                    document.getElementById("resultado").innerHTML = var1+  ' é par'
+                    
+                }else {
+                    document.getElementById("resultado").innerHTML = var1+  ' é ímpar'
+                }
+            }
+        
+
+
+
+              
+           checarNumero();
+        
+    </script>
+
+Insira um número: <input id="var1" value=" " ><br><br>
+
+<button id="checarNumero" onclick="checarNumero()">Mostrar</button><br><br>
+
+<div id="resultado"></div>
+
+</html>

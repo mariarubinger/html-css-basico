@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+</head>
+<body>
+    <header>
+        <h3>
+            Exercício: Escreva um programa para ler 2 valores (considere que não serão	
+            informados valores iguais) e escreva o maior deles.          
+        </h3>
+    </header>
+
+    <script>
+      function maiorValor() {
+            var var1 = document.getElementById("var1").value;
+            var var2 = document.getElementById("var2").value;
+            
+            if (parseInt(var2) == parseInt(var1)) {
+                alert('Insira uma variável diferente da primeira!');
+                document.getElementById("result").innerHTML = '';
+           
+            } else if (parseInt(var2) > parseInt(var1)) {
+                document.getElementById("result").innerHTML = parseInt(var2);
+        
+            } else {
+                document.getElementById("result").innerHTML = parseInt(var1);
+            }
+        }
+
+    </script>
+
+    Insira a Primeira variável: <input id="var1" value=" "><br><br>
+
+    Insira a Segunda variável: <input id="var2" value=" "><br><br>
+
+    <button id="maiorValor" onclick="maiorValor()">Mostrar</button><br><br>
+    
+    O maior valor entre eles é: <div id="result"></div>
+
+</body>
+</html>

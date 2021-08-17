@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Exibir até o termo: <input id="numero" type="number"> <br />
+    <button onclick="fibonacci()">Exibir</button><br />
+    <div id='resposta'></div>
+    
+<script>
+
+function fibonacci(){
+    var termo = parseInt(document.getElementById('numero').value);
+    var resposta = document.getElementById('resposta');
+    var penultimo=0, ultimo=1;
+    var numero;
+  
+    if(termo<=2)
+     numero = termo-1;
+    else
+     for(var count=3 ; count<=termo ; count++){
+      numero = ultimo + penultimo;
+      penultimo = ultimo;
+      ultimo = numero;
+     }
+  
+    resposta.innerHTML=numero;
+  }
+  
+  var letraEmail =[AcoDQeYjrSlByFtyzQhvjoCNVpsaLeQPtGUjQHVzbgabJuAiMHDxwfkNvCwIGmZCTInlSiKvRKxAGzJsgmPeUBAReDzmLzqgJgrXobzfoWiwvRPdFgJzIkSoJscWtVdEbuIRYhXOdHkayBdFIMHSyzIJtmGMhJTiFBaDIzrngCngdSnngUHFWpQpCwElHxunYWsiXKvFOkntcAHiXopTgIKkeovoLrBlPTtMfqTTAgnejUPgKeBsolCtAAjNtKBjf]
+  console.log(letraEmail[numero]);
+  </script>  
+  
+</body>
+</html>
